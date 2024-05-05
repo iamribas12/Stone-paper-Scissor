@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.head {
+    background-color: brown;
+    color: #fff;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 4vmin;
+    height: 2rem;
+    line-height: 2rem;
+    cursor: pointer;
+}
+
+i {
+    font-size: 2.9vmin;
+}
+
+body {
+    background-color: #FDFFC2;
+}
+
+.main-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 1%;
+}
+
+h1 {
+    background-color: #081d31;
+    color: #fff;
+    height: 3.9rem;
+    line-height: 3.9rem;
+    text-shadow: 0 0 1.3rem aqua;
+}
+
+.choice img {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.choice img:hover {
+    box-shadow: 0 0 1.9rem aqua;
+}
+
+.choice img:active {
+    box-shadow: 0 0 1.9rem red;
+    border: 1px solid;
+}
+
+.choice {
+    display: inline;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.score-board p {
+    font-size: 1.5rem;
+}
+
+#element {
+    font-family: "Poetsen One", sans-serif;
+    /* margin-top: 2%; */
+    font-size: 3rem;
+}
+
+#user-score,
+#comp-score {
+    color: red;
+    font-size: 2rem;
+}
+
+#msg {
+    font-family: "Briem Hand", cursive;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: brown;
+    display: inline-block;
+    /* width: 14.2rem; */
+    height: 2rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#msg-yet {
+    background-color: white;
+    font-size: .8rem;
+    display: inline-block;
+    width: 58vmin;
+    height: 10rem;
+    font-family: "Open Sans", sans-serif;
+    box-shadow: 0 0 2.1rem grey;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 0 5px;
+}
+
+
+/* breakpoints */
+
+@media(max-width:450px) {
+    .choices {
+        justify-content: space-around;
+    }
+    #element {
+        font-size: 2rem;
+    }
+}
