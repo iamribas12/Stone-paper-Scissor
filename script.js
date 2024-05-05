@@ -39,14 +39,14 @@ const showwinner = (user, Uc, Cc) => {
         userScore++;
         userScorePara.innerText = userScore;
         msg.style.backgroundColor = "green";
-        yetMsg.innerText = `User choosed ${Uc} and Computer Choosed ${Cc}\n so You win`;
+        yetMsg.innerText = `You choosed ${Uc} and Computer Choosed ${Cc}\n so You win`;
         audio.play();
     } else {
         compScore++;
         msg.innerText = "You Lose"
         compScorePara.innerText = compScore;
         msg.style.backgroundColor = "red";
-        yetMsg.innerText = `Computer choosed ${Cc} and User Choosed ${Uc}\n so You lose`;
+        yetMsg.innerText = `Computer choosed ${Cc} and You Choosed ${Uc}\n so You lose`;
         audio.pause();
     }
 }
